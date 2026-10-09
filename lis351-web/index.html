@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Madison</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222222;
+            background-color: #FFFFFF;
+        }
+
+        header {
+            background-color: #1F4E79;
+            padding: 20px 40px;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav > a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header li a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        main {
+            margin: 0;
+        }
+
+        #home {
+            background-color: #DCEAF7;
+            padding: 60px 40px;
+        }
+
+        #home h1 {
+            color: #1F4E79;
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        #home p {
+            font-size: 20px;
+        }
+
+        #home > a {
+            display: inline-block;
+            background-color: #5B8C5A;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 15px 0 25px 0;
+            border-radius: 5px;
+        }
+
+        #home img {
+            display: block;
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+        }
+
+        #features {
+            padding: 50px 40px;
+        }
+
+        #features h2 {
+            color: #1F4E79;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .feature-container {
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        .feature {
+            flex: 1;
+            background-color: #DCEAF7;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .feature img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            color: #1F4E79;
+        }
+
+        .feature p {
+            line-height: 1.6;
+        }
+
+        #featured {
+            background-color: #DCEAF7;
+            padding: 50px 40px;
+        }
+
+        #featured h2 {
+            color: #1F4E79;
+        }
+
+        #featured img {
+            display: block;
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        #featured a {
+            color: #1F4E79;
+            font-weight: bold;
+        }
+
+        #places {
+            padding: 50px 40px;
+        }
+
+        #places h2 {
+            color: #1F4E79;
+        }
+
+        .secondary-container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .secondary {
+            flex: 1;
+            border: 2px solid #DCEAF7;
+            padding: 25px;
+        }
+
+        .secondary h3 {
+            color: #1F4E79;
+        }
+
+        #places ul {
+            line-height: 2;
+        }
+
+        #contact {
+            background-color: #5B8C5A;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 50px 40px;
+        }
+
+        #contact a {
+            display: inline-block;
+            background-color: #FFFFFF;
+            color: #5B8C5A;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #1F4E79;
+            color: #FFFFFF;
+            padding: 30px 40px;
+        }
+
+        footer nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        footer a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav>
+            <a href="#home">Explore Madison</a>
+
+            <ul>
+                <li>
+                    <a href="#features">Highlights</a>
+                </li>
+
+                <li>
+                    <a href="#featured">Featured</a>
+                </li>
+
+                <li>
+                    <a href="#places">Places</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+
+        <section id="home">
+
+            <h1>Explore Madison</h1>
+
+            <p>
+                Discover places, activities, and experiences around Madison, Wisconsin.
+            </p>
+
+            <a href="#featured">Start Exploring</a>
+
+            <img
+                src="images/madison-lake.png"
+                alt="Madison waterfront and Lake Mendota"
+            >
+
+        </section>
+
+
+        <!-- Three Feature Columns -->
+
+        <section id="features">
+
+            <h2>What Madison Has to Offer</h2>
+
+            <div class="feature-container">
+
+                <article class="feature">
+
+                    <img
+                        src="images/water-icon.svg"
+                        alt="Water icon"
+                    >
+
+                    <h3>Lakes &amp; Parks</h3>
+
+                    <p>
+                        Madison has many lakes, parks, and walking paths that are
+                        great for relaxing or spending time with friends.
+                    </p>
+
+                </article>
+
+
+                <article class="feature">
+
+                    <img
+                        src="images/food-icon.svg"
+                        alt="Food bowl icon"
+                    >
+
+                    <h3>Food &amp; Cafés</h3>
+
+                    <p>
+                        Students can find many restaurants, cafés, and local food
+                        spots around the city.
+                    </p>
+
+                </article>
+
+
+                <article class="feature">
+
+                    <img
+                        src="images/student-icon.svg"
+                        alt="Student icon"
+                    >
+
+                    <h3>Student Activities</h3>
+
+                    <p>
+                        There are many activities and events that students can
+                        enjoy throughout the year.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Featured Content -->
+
+        <section id="featured">
+
+            <h2>Featured: Explore Lake Mendota</h2>
+
+            <p>
+                Lake Mendota is a central part of Madison and is a popular place
+                for walking, relaxing, and enjoying the outdoors.
+            </p>
+
+            <img
+                src="images/lake-mendota.png"
+                alt="Lake Mendota with trees and the Madison skyline"
+            >
+
+            <p>
+                <a href="https://www.cityofmadison.com/parks/">
+                    Learn more about Madison parks
+                </a>
+            </p>
+
+        </section>
+
+
+        <!-- Secondary Content -->
+
+        <section id="places">
+
+            <h2>More Places to Explore</h2>
+
+            <div class="secondary-container">
+
+                <article class="secondary">
+
+                    <h3>Walk Around State Street</h3>
+
+                    <p>
+                        State Street connects the UW–Madison campus with downtown
+                        Madison and has restaurants, shops, and other places to explore.
+                    </p>
+
+                </article>
+
+
+                <article class="secondary">
+
+                    <h3>Visit the Capitol</h3>
+
+                    <p>
+                        The Wisconsin State Capitol is an important landmark in
+                        downtown Madison and is surrounded by parks, restaurants,
+                        and events.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <h3>Simple Ways to Explore</h3>
+
+            <ul>
+                <li>Walk around the lakes.</li>
+                <li>Visit a local café.</li>
+                <li>Explore State Street.</li>
+                <li>Visit the Capitol Square.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- Call to Action -->
+
+        <section id="contact">
+
+            <h2>Ready to Explore?</h2>
+
+            <p>
+                Start exploring Madison and find a place that interests you.
+            </p>
+
+            <a href="#home">Explore Madison</a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Explore Madison
+        </p>
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#features">Highlights</a>
+                </li>
+
+                <li>
+                    <a href="#featured">Featured</a>
+                </li>
+
+                <li>
+                    <a href="#places">Places</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
