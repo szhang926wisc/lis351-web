@@ -155,7 +155,7 @@ a:hover { text-decoration: underline; }
 .media {
   background: #eaeaea;
   border: 1px solid #ddd;
-  height: 260px;
+  height: 340px;
   display: grid;
   place-items: center;
   overflow: hidden;
